@@ -91,36 +91,36 @@ namespace Botzy.commands
             }
 
         }
-            #endregion
-            #region Calculations
+        #endregion
+        #region Calculations
 
-            [Command("add")]
-            public async Task Add(CommandContext ctx, int number1, int number2)
-            {
-                int result = number1 + number2;
-                await ctx.Channel.SendMessageAsync(result.ToString());
-            }
-
-            [Command("subtract")]
-            public async Task Subtract(CommandContext ctx, int number1, int number2)
-            {
-                int result = number1 - number2;
-                await ctx.Channel.SendMessageAsync(result.ToString());
-            }
-
-            [Command("Multiply")]
-            public async Task Multiply(CommandContext ctx, int number1, int number2)
-            {
-                int result = number1 * number2;
-                await ctx.Channel.SendMessageAsync(result.ToString());
-            }
-
-            [Command("divide")]
-            public async Task Divide(CommandContext ctx, int number1, int number2)
-            {
-                int result = number1 / number2;
-                await ctx.Channel.SendMessageAsync(result.ToString());
-            }
-            #endregion
+        [Command("add")]
+        public async Task Add(CommandContext ctx, int number1, int number2)
+        {
+            int result = number1 + number2;
+            await ctx.Channel.SendMessageAsync(result.ToString());
         }
+
+        [Command("subtract")]
+        public async Task Subtract(CommandContext ctx, int number1, int number2)
+        {
+            int result = number1 - number2;
+            await ctx.Channel.SendMessageAsync(result.ToString());
+        }
+
+        [Command("Multiply")]
+        public async Task Multiply(CommandContext ctx, int number1, int number2)
+        {
+            int result = number1 * number2;
+            await ctx.Channel.SendMessageAsync(result.ToString());
+        }
+
+        [Command("divide")]
+        public async Task Divide(CommandContext ctx, int number1, int number2)
+        {
+            int result = number1 / number2;
+            await ctx.Channel.SendMessageAsync(result.ToString());
+        }
+        #endregion
     }
+}

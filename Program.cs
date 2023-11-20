@@ -36,7 +36,7 @@ namespace Botzy
                 EnableDefaultHelp = false
             };
 
-           Commands = Client.UseCommandsNext(commandsConfig);
+            Commands = Client.UseCommandsNext(commandsConfig);
 
             Commands.RegisterCommands<BasicCommands>();
 

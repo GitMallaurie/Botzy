@@ -16,9 +16,9 @@ namespace Botzy.config
 
         public async Task ReadJSON()
         {
-            using (StreamReader sr = new StreamReader("config.json")) 
-            { 
-             string json = await sr.ReadToEndAsync();
+            using (StreamReader sr = new StreamReader("config.json"))
+            {
+                string json = await sr.ReadToEndAsync();
                 JSONStructure data = JsonConvert.DeserializeObject<JSONStructure>(json);
 
                 this.token = data.token;
